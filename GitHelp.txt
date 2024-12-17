@@ -1,0 +1,10 @@
+#command use 1 time per 1 project
+1) git init
+2) git remote add origin "ssylka"
+
+#command always use
+git status
+git add ----- adding changes
+git commit -m ----- creating commit
+git branch ------ show current branch
+git push origin master ---- push to your rep
