@@ -1,6 +1,6 @@
 
 import sqlite3
-connect = sqlite3.connect('users.db')
+connect = sqlite3.connect('../hws/users.db')
 cursor = connect.cursor()
 # Один к одному - One to One
 # Многие к многим - Many to Many
