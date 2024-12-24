@@ -1,5 +1,5 @@
 import sqlite3
-connection = sqlite3.connect('users.db')
+connection = sqlite3.connect('../hws/users.db')
 cursor = connection.cursor()
 
 users_db =("""
