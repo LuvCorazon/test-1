@@ -39,10 +39,10 @@ def add_user(fio, age, hobby=""):
     cursor.execute('INSERT INTO users(fio, age) VALUES (?, ?)', (fio, age))
     connect.commit()
     print(f"Пользователь {fio}, Добавлен")
-add_user('жин', 39)
-add_user('йохан', 18)
-add_user('гон', 7)
-add_user('ким', 25)
+add_user('лок', 39)
+add_user('лак', 18)
+add_user('лик', 7)
+add_user('лук', 25)
 def delete_user_by_id(id):
     cursor.execute(
         'DELETE FROM users WHERE user_id = ?',
@@ -81,8 +81,8 @@ def add_grade(user_id, subject, grade):
         (user_id, subject, grade)
     )
     connect.commit()
-add_grade(3, "хим", 5)
-add_grade(2, "физ", 4)
+add_grade(3, "гео", 5)
+add_grade(2, "мат", 4)
 def get_users_with_grades():
     cursor.execute("""
     SELECT users.fio, users.age, grades.subject, grades.grade
